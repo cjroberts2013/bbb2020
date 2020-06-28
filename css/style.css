@@ -66,6 +66,33 @@ body {
     color: #1f2c3d;
 }
 
+.btn:active {
+    background-color: #88660f;
+    border: #88660f 2px solid;
+    color: #fff;
+}
+
+.btn__dark {
+    border: #1f2c3d 2px solid;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.btn__dark:hover {
+    background-color: #1f2c3d;
+    color: #fff;
+}
+
+.btn__dark:active {
+    background-color: #324864;
+    border: #324864 2px solid;
+    color: #fff;
+}
+
 ul {
     list-style: none;
 }
@@ -98,14 +125,36 @@ img {
     align-items: center;
 }
 
+.section__header--dark {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .section__header h1 {
     font-size: 2.5rem;
+}
+
+.section__header--dark h1 {
+    font-size: 2.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header */
 .hero {
     background: url('./../img/bbb03.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 90vh;
     position: relative;
 }
 
@@ -121,6 +170,58 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.7);
+}
+
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-size: 2.5rem;
+}
+
+.hero .content h2 {
+    text-align: center;
+}
+
+.hero .content p {
+    margin-bottom: 30px;
+}
+
+/* Header for Review Page */
+.hero__review {
+    background: url('./../img/bbb33.jpg') no-repeat center center/cover;
+    height: 90vh;
+    position: relative;
+}
+
+.hero__review * {
+    z-index: 10;
+}
+
+.hero__review::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+
+.hero__review .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-size: 2.5rem;
+}
+
+.hero__review .content h2 {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 /* Navbar */
@@ -167,21 +268,6 @@ img {
     border-bottom: #e3ac1b solid 2px;
 }
 
-/* Header Content */
-
-
-.hero .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-size: 2.5rem;
-}
-
-.hero .content p {
-    margin-bottom: 30px;
-}
 
 /* Services */
 .service__cards {
@@ -237,6 +323,35 @@ img {
     border-radius: 5px 0 0 5px;
 }
 
+/* Reviews */
+.review__cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.review__card {
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    margin-top: 30px;
+}
+
+.review__card h4 {
+    font-weight: 300;
+}
+
+.review__card p {
+    font-size: 1.2rem;
+}
+
+.review__card:last-child {
+    margin-bottom: 30px;
+}
+
+.review__btn {
+    text-align: center;
+    margin-top: 30px;
+}
 
 /* About */
 .about__card {
@@ -263,4 +378,68 @@ img {
 .about__content p {
     font-size: 1.2rem;
     padding: 0 30px;
+}
+
+/* Photo Gallery */
+.photo__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.photo__column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.photo__column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    /* transition: transform .2s; */
+}
+
+/* .photo__column img:hover {
+    transform: scale(1.1);
+    border: #fff 4px solid;
+} */
+
+@media (max-width: 800px) {
+    .photo__gallery {
+        display: none;
+    }
+}
+
+/* Contact */
+.contact__form {
+    font-size: 1.4rem;
+}
+
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.contact__form label {
+    display: block;
+}
+
+.contact__form input,
+.contact__form textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact__form textarea {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+.footer {
+    font-size: 1rem;
+    padding: 10px;
 }

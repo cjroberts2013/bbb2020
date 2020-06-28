@@ -16,7 +16,7 @@
                 <ul class="">
                     <li><a href='#home'>Home</a></li>
                     <li><a href='#services'>Services</a></li>
-                    <li><a href='#reviews'>Reviews</a></li>
+                    <li><a href='reviews.html'>Reviews</a></li>
                     <li><a href='#about'>About</a></li>
                     <li><a href='#contact'>Contact</a></li>
                 </ul>
@@ -101,7 +101,22 @@
             <div class="section__header">
                 <h1>Reviews</h1>
             </div>
-            <div class="container review__cards"></div>
+            <div class="container review__cards">
+                <div class="review__card bg__primary dark__color">
+                    <h4><em>Kem Rolf Ford</em></h4>
+                    <h2>Very professional and took good care of the bees...</h2>
+                    <p>Thanks to Brody’s Busy Bees for taking care of my unwanted visitors!! I would definitely
+                        recommend him. Very professional and took good care of the bees while doing a great job! THANKS
+                        AGAIN!!</p>
+
+                </div>
+
+                <div class="flex">
+                    <a href="./reviews.html" class="btn__dark review__btn">See All Reviews</a>
+                </div>
+
+
+            </div>
         </section>
 
         <section id="about">
@@ -134,15 +149,95 @@
             </div>
         </section>
 
-        <section id="contact">
+        <section id="photos" class="photo__gallery">
             <div class="section__header">
+                <h1>Photo Gallery</h1>
+            </div>
+            <div class="photo__gal">
+                <div class="photo__row">
+                    <div class="photo__column">
+                        <img src="./img/sbbb02.jpg" alt="Photo">
+                        <img src="./img/sbbb03.jpg" alt="Photo">
+                        <img src="./img/sbbb04.jpg" alt="Photo">
+                        <img src="./img/sbbb05.jpg" alt="Photo">
+                        <img src="./img/sbbb06.jpg" alt="Photo">
+                        <img src="./img/sbbb07.jpg" alt="Photo">
+                        <img src="./img/sbbb08.jpg" alt="Photo">
+                        <img src="./img/sbbb09.jpg" alt="Photo">
+                    </div>
+                    <div class="photo__column">
+                        <img src="./img/sbbb10.jpg" alt="Photo">
+                        <img src="./img/sbbb11.jpg" alt="Photo">
+                        <img src="./img/sbbb14.jpg" alt="Photo">
+                        <img src="./img/sbbb15.jpg" alt="Photo">
+                        <img src="./img/sbbb16.jpg" alt="Photo">
+                        <img src="./img/sbbb17.jpg" alt="Photo">
+                        <img src="./img/sbbb18.jpg" alt="Photo">
+                        <img src="./img/sbbb19.jpg" alt="Photo">
+                    </div>
+                    <div class="photo__column">
+                        <img src="./img/sbbb21.jpg" alt="Photo">
+                        <img src="./img/sbbb22.jpg" alt="Photo">
+                        <img src="./img/sbbb23.jpg" alt="Photo">
+                        <img src="./img/sbbb24.jpg" alt="Photo">
+                        <img src="./img/sbbb25.jpg" alt="Photo">
+                        <img src="./img/sbbb26.jpg" alt="Photo">
+                        <img src="./img/sbbb28.jpg" alt="Photo">
+                        <img src="./img/sbbb29.jpg" alt="Photo">
+                    </div>
+                    <div class="photo__column">
+                        <img src="./img/sbbb30.jpg" alt="Photo">
+                        <img src="./img/sbbb31.jpg" alt="Photo">
+                        <img src="./img/sbbb50.jpg" alt="Photo">
+                        <img src="./img/sbbb40.jpg" alt="Photo">
+                        <img src="./img/sbbb43.jpg" alt="Photo">
+                        <img src="./img/sbbb44.jpg" alt="Photo">
+                        <img src="./img/sbbb45.jpg" alt="Photo">
+                        <img src="./img/sbbb46.jpg" alt="Photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg__dark light__color">
+            <div class="section__header--dark">
                 <h1>Contact</h1>
             </div>
-            <div class="container review__cards"></div>
+            <div class="container contact__form">
+                <h3>For any estimates, questions or inquires, please contact us at:</h3>
+                <p>Phone: <strong>(832) 344-7006</strong></p>
+                <p>Email: <strong>brodysbusybees@gmail.com</strong></p>
+                <p>Facebook Page: <strong><a href="https://www.facebook.com/Brodys-Busy-Bees-115136790177476"
+                            target="_blank" class="light__color">Facebook/Brodys-Busy-Bees</a></strong>
+                </p>
+                <p class="mb">Or by filling out the form below.</p>
+                <form name="contact" method="POST" data-netlify="true" class="contact__form">
+                    <div class="form__group">
+                        <label for="name">Full Name</label>
+                        <input type="text" placeholder="John Smith">
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="johnsmith@gmail.com">
+                    </div>
+                    <div class="form__group">
+                        <label for="name">Message</label>
+                        <textarea type="text" rows="8"></textarea>
+                    </div>
+                    <div class="flex">
+                        <button type="submit" class="mb btn">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer class="bg__dark light__color"></footer>
+    <footer class="bg__dark light__color">
+        <div class="flex footer">
+            &copy; 2020 Brody's Busy Bees. All rights reserved
+        </div>
+    </footer>
 </body>
 
 </html>

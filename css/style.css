@@ -15,8 +15,9 @@ body {
 /* Utilities */
 
 .container {
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .primary__color {
@@ -442,4 +443,225 @@ img {
 .footer {
     font-size: 1rem;
     padding: 10px;
+}
+
+/* Media Queries */
+
+@media(max-width: 1700px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .about__card {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 1350px) {
+
+    
+    .about__content {
+        padding: 15px;
+    }
+
+    .about__content h2 {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+
+    .about__content p {
+        font-size: 1rem;
+        padding: 15px;
+        margin: 0;
+    }
+}
+
+@media(max-width: 1100px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .about__card {
+        flex-direction: column;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+    
+    .about__content {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .btn, .btn__dark {
+        font-size: 1rem;
+    }
+
+    .section__header {
+        height: 70px;
+    }
+
+    .section__header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .section__header--dark {
+        height: 70px;
+    }
+
+    .section__header--dark h1 {
+        font-size: 1.6rem;
+    }
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar h2 a {
+        color: #fff;
+        padding: 15px 8px;
+        margin: 0 5px;
+    }
+
+    .navbar nav a {
+        color: #fff;
+        padding: 15px 8px;
+        margin: 0 5px;
+    }
+
+    .hero {
+        background: url('./../img/bbb03.jpg') no-repeat center center/cover;
+        height: 80vh;
+        position: relative;
+    }
+
+    .hero__review {
+        background: url('./../img/bbb33.jpg') no-repeat center center/cover;
+        height: 70vh;
+        position: relative;
+    }
+
+    .hero .content {
+        font-size: 2rem;
+        height: 80vh;
+    }
+
+    .hero__review .content {
+        font-size: 2rem;
+        height: 70vh;
+    }
+
+    .service__cards .card {
+        font-size: 1rem;
+    }
+
+    .review__card {
+        padding: 20px;
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+    
+    .review__card p {
+        font-size: 1rem;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .mb {
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px 0;
+        height: 85px;
+    }
+
+    .navbar h2 a {
+        font-size: 1.4rem;
+    }
+
+    .navbar nav a {
+        padding: 15px 5px;
+        margin: 0 3px;
+    }
+
+    .hero .content {
+        font-size: 1.6rem;
+    }
+
+    .hero__review .content {
+        font-size: 1.6rem;
+    }
+
+    .service__cards .card {
+        flex-direction: column;
+        margin: 15px 0 0 0;
+    }
+
+    .service__cards .card:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .service__cards .card:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .service__cards .card:last-child {
+        margin-bottom: 15px;
+    }
+
+    .col1 {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+    
+    }
+    
+    .col2 {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+    }
+    
+    .col1-rev {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+    
+    }
+    
+    .col2-rev {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .contact__form {
+        font-size: 1rem;
+    }
+
+    .review__card {
+        margin-top: 15px;
+    }
+
+    .review__card:last-child {
+        margin-bottom: 15px;
+    }
+
+    .review__card h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact__form input,
+    .contact__form textarea {
+    font-size: 1rem;
+}
 }

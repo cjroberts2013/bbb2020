@@ -391,7 +391,7 @@ img {
 .photo__column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 4px 4px 4px;
 }
 
 .photo__column img {

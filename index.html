@@ -211,18 +211,18 @@
                             target="_blank" class="light__color">Facebook/Brodys-Busy-Bees</a></strong>
                 </p>
                 <p class="mb">Or by filling out the form below.</p>
-                <form name="contact" method="POST" data-netlify="true" class="contact__form">
+                <form name="contact" method="POST" data-netlify="true" netlify class="contact__form">
                     <div class="form__group">
                         <label for="name">Full Name</label>
-                        <input type="text" placeholder="John Smith">
+                        <input type="text" name='name' placeholder="John Smith">
                     </div>
                     <div class="form__group">
                         <label for="email">Email</label>
-                        <input type="email" placeholder="johnsmith@gmail.com">
+                        <input type="email" name='email' placeholder="johnsmith@gmail.com">
                     </div>
                     <div class="form__group">
                         <label for="name">Message</label>
-                        <textarea type="text" rows="8"></textarea>
+                        <textarea type="text" name='message' rows="8"></textarea>
                     </div>
                     <div class="flex">
                         <button type="submit" class="mb btn">Send Message</button>
